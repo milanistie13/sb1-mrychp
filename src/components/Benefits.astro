@@ -1,0 +1,21 @@
+---
+const benefits = [
+  "Metode Sederhana, Hasil Maksimal: Strategi yang mudah diikuti dan dapat langsung diterapkan.",
+  "Efisiensi dalam Belajar: Temukan cara belajar yang membuat Anda lebih produktif dengan usaha yang lebih sedikit.",
+  "Keseimbangan Hidup dan Studi: Pelajari cara menjaga performa akademik tanpa mengorbankan kehidupan pribadi.",
+  "Motivasi Berkelanjutan: Temukan cara untuk tetap termotivasi sepanjang perjalanan akademik Anda."
+];
+---
+<section class="py-12 bg-gray-100">
+  <div class="container mx-auto px-4">
+    <h2 class="text-2xl font-bold mb-6">Manfaat yang Anda Dapatkan</h2>
+    <ul class="grid grid-cols-1 md:grid-cols-2 gap-4">
+      {benefits.map(benefit => (
+        <li class="bg-white p-4 rounded-lg shadow">
+          <span class="text-blue-600 font-bold mr-2">✓</span>
+          {benefit}
+        </li>
+      ))}
+    </ul>
+  </div>
+</section>
